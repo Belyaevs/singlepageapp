@@ -1,5 +1,5 @@
-import React from "React";
-import ReactDom from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 import Main from "./main/main";
 
 ReactDOM.render(

@@ -1,7 +1,7 @@
-import React from "React";
+import React from "react";
 import ReactDom from "react-dom";
 
-export default class Main extends Component {
+class Main extends React.Component {
     render() {
         return (
             <div>
@@ -17,3 +17,5 @@ export default class Main extends Component {
         );
     }
 }
+
+export default Main;
