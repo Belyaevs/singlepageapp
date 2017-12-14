@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-class Main extends React.Component {
+export default class Main extends React.Component {
     render() {
         return (
             <div>
@@ -18,4 +18,3 @@ class Main extends React.Component {
     }
 }
 
-export default Main;
