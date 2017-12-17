@@ -14,11 +14,11 @@ export default class Main extends React.Component {
         return (
             <HashRouter>
                <div>
-                  <h1>Simple SPA</h1>
+                    <h1>Secret Santa</h1>
                   <ul className="header">
-                      <li><NavLink exact to="/">Home</NavLink></li>
-                      <li><NavLink to="/stuff">Stuff</NavLink></li>
-                      <li><NavLink to="/contact">Contact</NavLink></li>
+                      <li><NavLink exact to="/">Host</NavLink></li>
+                        <li><NavLink to="/stuff">Participants</NavLink></li>
+                      <li><NavLink to="/contact">FAQ</NavLink></li>
                   </ul>
                  <div className="content">
                         <Route exact path="/" component={Home} />
@@ -31,3 +31,4 @@ export default class Main extends React.Component {
     }
 }
 
+    

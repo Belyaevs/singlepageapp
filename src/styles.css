@@ -1,5 +1,5 @@
+
 body {
-  background-color: #FFCC00;
   padding: 20px;
   margin: 0;
 }
@@ -35,4 +35,22 @@ ul.header li a {
 }
 .active {
   background-color: #0099FF;
+}
+.participants__details {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lavender;
+    border: 1px solid;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+td {
+  padding: 15px;
 }

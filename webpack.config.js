@@ -53,7 +53,7 @@ module.exports = {
             }
         ]
     },
-    plugins: entryHtmlPlugins
+    plugins: entryHtmlPlugins,
 };
 
 

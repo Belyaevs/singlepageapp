@@ -2402,8 +2402,8 @@ var Home = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     "h2",
-                    null,
-                    "HELLO"
+                    { className: "text-success" },
+                    "Metus dui bibendum"
                 ),
                 _react2.default.createElement(
                     "p",
@@ -2411,9 +2411,105 @@ var Home = function (_React$Component) {
                     "Cras facilisis urna ornare ex volutpat, et convallis erat elementum. Ut aliquam, ipsum vitae gravida suscipit, metus dui bibendum est, eget rhoncus nibh metus nec massa. Maecenas hendrerit laoreet augue nec molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                 ),
                 _react2.default.createElement(
-                    "p",
-                    null,
-                    "Duis a turpis sed lacus dapibus elementum sed eu lectus."
+                    "form",
+                    { action: "" },
+                    _react2.default.createElement(
+                        "p",
+                        { className: "hostDetails__input" },
+                        "Host name:"
+                    ),
+                    _react2.default.createElement("input", { type: "text", name: "Host", placeholder: "Jo Bransky", required: true }),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "hostDetails__input" },
+                        "Email:"
+                    ),
+                    _react2.default.createElement("input", { type: "email", name: "Email", placeholder: "example@gmail.com", required: true }),
+                    _react2.default.createElement("input", { type: "submit", defaultValue: "Submit", required: true })
+                ),
+                _react2.default.createElement(
+                    "form",
+                    { action: "" },
+                    _react2.default.createElement(
+                        "h4",
+                        { className: "hostDetails__party" },
+                        "Tell us about your party"
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        "Location of your Secret Santa party"
+                    ),
+                    _react2.default.createElement("input", { type: "text", required: true }),
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        "When is your party?"
+                    ),
+                    _react2.default.createElement("input", { type: "date", required: true }),
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        "Amount to spend"
+                    ),
+                    _react2.default.createElement("input", { type: "text", placeholder: "$20", required: true }),
+                    _react2.default.createElement("input", { type: "submit", defaultValue: "Submit" })
+                ),
+                _react2.default.createElement(
+                    "form",
+                    { action: "" },
+                    _react2.default.createElement(
+                        "h4",
+                        { className: "hostDetails__party" },
+                        "Add participants"
+                    ),
+                    _react2.default.createElement(
+                        "table",
+                        { className: "participants__details" },
+                        _react2.default.createElement("thead", null),
+                        _react2.default.createElement(
+                            "tbody",
+                            null,
+                            _react2.default.createElement(
+                                "tr",
+                                { className: "participants__details-head" },
+                                _react2.default.createElement(
+                                    "th",
+                                    null,
+                                    "Name"
+                                ),
+                                _react2.default.createElement(
+                                    "th",
+                                    null,
+                                    "Email"
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "tr",
+                                null,
+                                _react2.default.createElement("td", null),
+                                _react2.default.createElement("td", null)
+                            ),
+                            _react2.default.createElement(
+                                "tr",
+                                null,
+                                _react2.default.createElement("td", null),
+                                _react2.default.createElement("td", null)
+                            ),
+                            _react2.default.createElement(
+                                "tr",
+                                null,
+                                _react2.default.createElement("td", null),
+                                _react2.default.createElement("td", null)
+                            ),
+                            _react2.default.createElement(
+                                "tr",
+                                null,
+                                _react2.default.createElement("td", null),
+                                _react2.default.createElement("td", null)
+                            )
+                        )
+                    )
                 )
             );
         }
@@ -19921,7 +20017,7 @@ var Main = function (_React$Component) {
                     _react2.default.createElement(
                         "h1",
                         null,
-                        "Simple SPA"
+                        "Secret Santa"
                     ),
                     _react2.default.createElement(
                         "ul",
@@ -19932,7 +20028,7 @@ var Main = function (_React$Component) {
                             _react2.default.createElement(
                                 _reactRouterDom.NavLink,
                                 { exact: true, to: "/" },
-                                "Home"
+                                "Host"
                             )
                         ),
                         _react2.default.createElement(
@@ -19941,7 +20037,7 @@ var Main = function (_React$Component) {
                             _react2.default.createElement(
                                 _reactRouterDom.NavLink,
                                 { to: "/stuff" },
-                                "Stuff"
+                                "Participants"
                             )
                         ),
                         _react2.default.createElement(
@@ -19950,7 +20046,7 @@ var Main = function (_React$Component) {
                             _react2.default.createElement(
                                 _reactRouterDom.NavLink,
                                 { to: "/contact" },
-                                "Contact"
+                                "FAQ"
                             )
                         )
                     ),
@@ -23716,7 +23812,7 @@ exports = module.exports = __webpack_require__(81)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #FFCC00;\n  padding: 20px;\n  margin: 0;\n}\nh1, h2, p, ul, li {\n  font-family: sans-serif;\n}\nul.header li {\n  display: inline;\n  list-style-type: none;\n  margin: 0;\n}\nul.header {\n  background-color: #111;\n  padding: 0;\n}\nul.header li a {\n  color: #FFF;\n  font-weight: bold;\n  text-decoration: none;\n  padding: 20px;\n  display: inline-block;\n}\n.content {\n  background-color: #FFF;\n  padding: 20px;\n}\n.content h2 {\n  padding: 0;\n  margin: 0;\n}\n.content li {\n  margin-bottom: 10px;\n}\n.active {\n  background-color: #0099FF;\n}", ""]);
+exports.push([module.i, "\nbody {\n  padding: 20px;\n  margin: 0;\n}\nh1, h2, p, ul, li {\n  font-family: sans-serif;\n}\nul.header li {\n  display: inline;\n  list-style-type: none;\n  margin: 0;\n}\nul.header {\n  background-color: #111;\n  padding: 0;\n}\nul.header li a {\n  color: #FFF;\n  font-weight: bold;\n  text-decoration: none;\n  padding: 20px;\n  display: inline-block;\n}\n.content {\n  background-color: #FFF;\n  padding: 20px;\n}\n.content h2 {\n  padding: 0;\n  margin: 0;\n}\n.content li {\n  margin-bottom: 10px;\n}\n.active {\n  background-color: #0099FF;\n}\n.participants__details {\n  width: 80%;\n  margin: 0 auto;\n  background-color: lavender;\n    border: 1px solid;\n    text-align: center;\n}\ntable, th, td {\n    border: 1px solid black;\n    border-collapse: collapse;\n}\nth, td {\n    padding: 5px;\n    text-align: left;    \n}\ntd {\n  padding: 15px;\n}", ""]);
 
 // exports
 
