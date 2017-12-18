@@ -36,21 +36,25 @@ ul.header li a {
 .active {
   background-color: #0099FF;
 }
-.participants__details {
-  width: 80%;
+.participants {
+    width: 80%;
   margin: 0 auto;
   background-color: lavender;
     border: 1px solid;
     text-align: center;
 }
-table, th, td {
+table {
     border: 1px solid black;
-    border-collapse: collapse;
+
 }
 th, td {
-    padding: 5px;
+    padding: 15px;
     text-align: left;    
 }
 td {
   padding: 15px;
+}
+
+.participants__form {
+  width: 100%;
 }
