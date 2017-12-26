@@ -2488,50 +2488,54 @@ var participantsInput = {
     // input: <td><input type='text' className='participants__details' /></td>,
     // btn: <td><button className="participants__remove-add"></button></td>,
     input: _react2.default.createElement(
-        "tr",
-        { className: "participants__details-input" },
+        "tbody",
+        null,
         _react2.default.createElement(
-            "td",
-            null,
-            _react2.default.createElement("input", { type: "text", className: "participants__details" })
-        ),
-        _react2.default.createElement(
-            "td",
-            null,
-            _react2.default.createElement("input", { type: "text", className: "participants__details" })
-        ),
-        _react2.default.createElement(
-            "td",
-            null,
+            "tr",
+            { className: "participants__details-input" },
             _react2.default.createElement(
-                "button",
-                { className: "participants__add" },
-                "Add"
-            )
-        ),
-        _react2.default.createElement(
-            "td",
-            null,
+                "td",
+                null,
+                _react2.default.createElement("input", { type: "text", className: "participants__details" })
+            ),
             _react2.default.createElement(
-                "button",
-                { className: "participants__remove" },
-                "Remove"
+                "td",
+                null,
+                _react2.default.createElement("input", { type: "text", className: "participants__details" })
+            ),
+            _react2.default.createElement(
+                "td",
+                null,
+                _react2.default.createElement(
+                    "button",
+                    { className: "participants__add" },
+                    "Add"
+                )
+            ),
+            _react2.default.createElement(
+                "td",
+                null,
+                _react2.default.createElement(
+                    "button",
+                    { className: "participants__remove" },
+                    "Remove"
+                )
             )
         )
     )
 
 };
 
-var Participants = function (_React$Component) {
-    _inherits(Participants, _React$Component);
+var ParticipantsDetails = function (_React$Component) {
+    _inherits(ParticipantsDetails, _React$Component);
 
-    function Participants() {
-        _classCallCheck(this, Participants);
+    function ParticipantsDetails() {
+        _classCallCheck(this, ParticipantsDetails);
 
-        return _possibleConstructorReturn(this, (Participants.__proto__ || Object.getPrototypeOf(Participants)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (ParticipantsDetails.__proto__ || Object.getPrototypeOf(ParticipantsDetails)).apply(this, arguments));
     }
 
-    _createClass(Participants, [{
+    _createClass(ParticipantsDetails, [{
         key: "render",
         value: function render() {
             return _react2.default.createElement(
@@ -2546,17 +2550,21 @@ var Participants = function (_React$Component) {
                     "table",
                     { className: "participants" },
                     _react2.default.createElement(
-                        "tr",
-                        { className: "participants__details-head" },
+                        "tbody",
+                        null,
                         _react2.default.createElement(
-                            "th",
-                            null,
-                            "Name"
-                        ),
-                        _react2.default.createElement(
-                            "th",
-                            null,
-                            "Email"
+                            "tr",
+                            { className: "participants__details-head" },
+                            _react2.default.createElement(
+                                "th",
+                                null,
+                                "Name"
+                            ),
+                            _react2.default.createElement(
+                                "th",
+                                null,
+                                "Email"
+                            )
                         )
                     ),
                     participantsInput.input
@@ -2565,10 +2573,10 @@ var Participants = function (_React$Component) {
         }
     }]);
 
-    return Participants;
+    return ParticipantsDetails;
 }(_react2.default.Component);
 
-exports.default = Participants;
+exports.default = ParticipantsDetails;
 
 /***/ }),
 /* 37 */
@@ -2607,49 +2615,7 @@ var Stuff = function (_React$Component) {
     _createClass(Stuff, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "h2",
-                    null,
-                    "STUFF"
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "Mauris sem velit, vehicula eget sodales vitae, rhoncus eget sapien:"
-                ),
-                _react2.default.createElement(
-                    "ol",
-                    null,
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "Nulla pulvinar diam"
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "Facilisis bibendum"
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "Vestibulum vulputate"
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "Eget erat"
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "Id porttitor"
-                    )
-                )
-            );
+            return _react2.default.createElement("div", null);
         }
     }]);
 
@@ -2683,16 +2649,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Contact = function (_React$Component) {
-    _inherits(Contact, _React$Component);
+var FAQ = function (_React$Component) {
+    _inherits(FAQ, _React$Component);
 
-    function Contact() {
-        _classCallCheck(this, Contact);
+    function FAQ() {
+        _classCallCheck(this, FAQ);
 
-        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (FAQ.__proto__ || Object.getPrototypeOf(FAQ)).apply(this, arguments));
     }
 
-    _createClass(Contact, [{
+    _createClass(FAQ, [{
         key: "render",
         value: function render() {
             return _react2.default.createElement(
@@ -2718,10 +2684,10 @@ var Contact = function (_React$Component) {
         }
     }]);
 
-    return Contact;
+    return FAQ;
 }(_react2.default.Component);
 
-exports.default = Contact;
+exports.default = FAQ;
 
 /***/ }),
 /* 39 */
@@ -2750,9 +2716,9 @@ var _stuff = __webpack_require__(37);
 
 var _stuff2 = _interopRequireDefault(_stuff);
 
-var _contact = __webpack_require__(38);
+var _faq = __webpack_require__(38);
 
-var _contact2 = _interopRequireDefault(_contact);
+var _faq2 = _interopRequireDefault(_faq);
 
 __webpack_require__(81);
 
@@ -20038,9 +20004,9 @@ var _stuff = __webpack_require__(37);
 
 var _stuff2 = _interopRequireDefault(_stuff);
 
-var _contact = __webpack_require__(38);
+var _faq = __webpack_require__(38);
 
-var _contact2 = _interopRequireDefault(_contact);
+var _faq2 = _interopRequireDefault(_faq);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20099,7 +20065,7 @@ var Main = function (_React$Component) {
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.NavLink,
-                                { to: "/contact" },
+                                { to: "/faq" },
                                 "FAQ"
                             )
                         )
@@ -20109,7 +20075,7 @@ var Main = function (_React$Component) {
                         { className: "content" },
                         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _home2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: "/stuff", component: _stuff2.default }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: "/contact", component: _contact2.default })
+                        _react2.default.createElement(_reactRouterDom.Route, { path: "/faq", component: _faq2.default })
                     )
                 )
             );

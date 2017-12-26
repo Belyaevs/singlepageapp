@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "../home/home";
 import Stuff from "../stuff/stuff";
-import Contact from "../contact/contact";
+import FAQ from "../faq/faq";
 
 export default class Main extends React.Component {
     render() {
@@ -18,12 +18,12 @@ export default class Main extends React.Component {
                   <ul className="header">
                       <li><NavLink exact to="/">Host</NavLink></li>
                         <li><NavLink to="/stuff">Participants</NavLink></li>
-                      <li><NavLink to="/contact">FAQ</NavLink></li>
+                        <li><NavLink to="/faq">FAQ</NavLink></li>
                   </ul>
                  <div className="content">
                         <Route exact path="/" component={Home} />
                         <Route path="/stuff" component={Stuff} />
-                        <Route path="/contact" component={Contact} />
+                        <Route path="/faq" component={FAQ} />
                  </div>
                 </div>
             </HashRouter>    

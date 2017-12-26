@@ -1,5 +1,5 @@
 import React from "react";
-import Participants from "../input/input";
+import ParticipantsDetails from "../input/input";
 import Host from "../host/host";
 
 export default class Home extends React.Component {
@@ -24,7 +24,7 @@ export default class Home extends React.Component {
                     <input type="text" placeholder="$20" required />   
                     <input type="submit" defaultValue="Submit" />
                 </form>
-               <Participants/>
+               <ParticipantsDetails/>
                
             </div>
         );
